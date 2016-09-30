@@ -50,8 +50,15 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
 }
+.story img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*sidemenu*/
+.sidemenu {
+  margin-bottom: 30px;
+}
 .sidemenu ul {
   margin: 0;
   padding: 0;
@@ -73,6 +80,13 @@ body {
   border-bottom: dotted 2px #dddddd;
   color: #666666;
   font-size: 18px;
+}
+
+/*Copyright*/
+.copyright p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
