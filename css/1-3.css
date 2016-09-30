@@ -1,0 +1,44 @@
+.boxA::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*.box1, .box2 {
+  float: left;
+  width: 50%;
+}*/
+
+/*.box1, .box2, .box3 {
+  float: left;
+  width: 33.3333%;
+}*/
+.box1 {
+  float: left;
+  width: 50%;
+  height: 280px;
+}
+/*.box2 {
+  float: left;
+  width: 300px;
+}
+.box3 {
+  float: none;
+  width: auto;
+  margin-left: 300px;
+}*/
+.box2 {
+  float: left;
+  width: 100%;
+  margin-right: -300px;
+  padding-right: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box3 {
+  float: left;
+  width: 300px;
+}
+
+

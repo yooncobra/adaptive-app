@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>Adaptive Web Design</title>
+  <link rel="stylesheet" href="resources/grid-guide/grid-guide-narabi.css">
+  <style>
+    @media (min-width: 768px) {
+      .box1 {
+        height: 25vh;
+      }
+      .boxA::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .boxB {
+        float: left;
+        width: 80%;
+        height: 75vh;
+      }
+      .box4 {
+        float: left;
+        width: 20%;
+        height: 75vh;
+      }
+      .box2 {
+        float: right;
+        width: 75%;
+        height: 100%;
+      }
+      .box3 {
+        float: left;
+        width: 25%;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+  <body>
+  <div class="box1">box1</div>
+  <div class="boxA">
+    <div class="boxB">
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </div>
+    <div class="box4">box4</div>
+</div>
+
+</body>
+</html>
