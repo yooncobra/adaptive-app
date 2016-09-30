@@ -1,0 +1,64 @@
+@charset: "UTF-8";
+
+/*그리드 가이드*/
+
+/*box로 시작되는 class명 적용,
+div안에 class 요소로 된 것들 빼고 모두다 적용*/
+[class^="box"],
+div:not([class]) {
+  border: solid 8px #faa;
+  color: #faa;
+  background-color: #fee;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  text-align: center;
+  line-height: 200px;
+  font-family: Verdata, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/*body 하위 div가 class 요소로 된 것들을 제외한 나머지에 적용*/
+body > div:not([class]) {min-height: 200px}
+
+/*box로 시작되는 class의 하위 요소 중, class명이 box로 시작되는 것들 제외*/
+[class^="box"] > *:not([class^="box"]) {
+  min-height: 0;
+  line-height: 1.5;
+  color: #000000;
+  font-size: 14px;
+  font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+.boxA {
+  border: none;
+  background: none;
+  line-height: normal;
+  text-align: left;
+}
+
+/*class명이 box로 시작되는 것의 하위요소 에서도 class가 box로 시작되는 속성 적용,
+div에 class 속성이 있는 것을 제외한 하위속성에서 class 속성이 없는것들에 적용*/
+[class^="box"] > [class^="box"],
+div:not([class]) > div:not([class]) {
+  border-color: #e0e03d;
+  color: #e0e03d;
+  background-color: #ffe;
+}
+
+
+[class^="box"] > [class^="box"] > [class^="box"]  {
+  border-color: #aaf;
+  color: #aaf;
+  background-color: #eef;
+  }
+
+[class^="box"] > [class^="box"] > [class^="box"] > [class^="box"] {
+  border-color: #afa;
+  color: #afa;
+  background-color: #efe;
+  }

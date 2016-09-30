@@ -1,0 +1,20 @@
+@charset: "UTF-8";
+
+.container {
+  border: solid 8px #00a0e9;
+  background-color: #a0e0fe;
+  color: #00a0e9
+}
+
+.container::after {
+  content: "container 내부에 출력을 확인하기 위해 넣은 글자입니다";
+  display: block;
+  /*clear: both;*/
+}
+/*.container {
+  overflow: hidden;
+}*/
+.box2, .box3 {
+  float: left;
+  /*width: 33.3333%;*/
+}
