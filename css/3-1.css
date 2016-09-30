@@ -5,13 +5,16 @@ body {
   font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
 }
 
+/*site name*/
 .site h1 a {
-  color: #000;
+  color: #83a4a8;
   text-decoration: none;
 }
 .site h1 {
   margin: 0;
   font-size: 30px;
+  font-family: 'Paytone One', sans-serif;
+  font-weight: normal;
 }
 
 /*네비게이션*/
@@ -22,13 +25,13 @@ body {
 }
 .menu li a {
   display: block;
-  padding: 5px;
+  padding: 15px; /*5px to 15px*/
   color: #000;
   font-size: 14px;
   text-decoration: none;
 }
 .menu li a:hover {
-  background-color: #eeeeee;
+  background-color: #75dbe7;
 }
 .menu ul::after {
   content: '';
@@ -89,6 +92,35 @@ body {
   font-size: 14px;
 }
 
+/*box2 designed to the bar type*/
+.box2 {
+  background-color: #7cbac1;
+}
+
+/*insert border over box5*/
+.box5 {
+  border-top: solid 1px #dddddd;
+}
+
+/*space between boxes*/
+.box1 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.box3 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.box4 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
 @media (min-width: 768px) {
   /*box3와 box4를 가로 정렬하는 설정*/
   .boxA::after {
@@ -103,5 +135,13 @@ body {
   .box4 {
     float: left;
     width: 30%;
+  }
+
+  /*box3 & box4 left right space*/
+  .box3 {
+    padding-right: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
